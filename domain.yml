@@ -1,0 +1,129 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- intent_goodbye
+- intent_tellSymptom
+- intent_denyHaveAppointment
+- intent_agreeTo
+- intent_greet
+- intent_thank
+- intent_askSeeDoctor
+- intent_tellName
+- intent_affirm
+- intent_deny
+- intent_sayTwoPM
+entities:
+- AppointmentDate
+- PatientName
+- SymptomDuration
+- SymptomLocation
+- SymptomName
+- SymptomServerity
+- SymptomDuartion
+slots:
+  AppointmentDate:
+    type: text
+  PatientName:
+    type: text
+  Specialist:
+    type: text
+  SymptomDuration:
+    type: text
+  SymptomLocation:
+    type: text
+  SymptomName:
+    type: text
+  SymptomServerity:
+    type: text
+  matches:
+    type: unfeaturized
+responses:
+  utter_acknowledge:
+  - text: I see
+  - text: right
+  - text: ok
+  utter_askAppointmentFriday:
+  - text: I see. How about Friday?
+  utter_askAppointmentTomorrow:
+  - text: Right. Shall I book you for tomorrow?
+  utter_askChooseTime:
+  - buttons:
+    - payload: ten AM
+      title: ten AM
+    - payload: two PM
+      title: two PM
+    - payload: other time
+      title: othe time
+    text: What time are you available?
+  utter_askHasAppointment:
+  - text: Do you have an appointment?
+  utter_askMakeAppointment:
+  - text: You need to have an apointment. Would you like to make it now?
+  utter_askName:
+  - text: Ok, may I have your full name please?
+  utter_askSymptom:
+  - text: How can I help you?
+  - text: So what seems to be the problem?
+  - text: So what brought you here?
+  utter_askSymptomDuration:
+  - text: how long have you had {SymptomName}?
+  utter_askWhatElse:
+  - buttons:
+    - payload: yes
+      title: yes
+    - payload: no
+      title: no
+    text: Do you have other symptoms other than {SymptomName}?
+  utter_default:
+  - text: You don't make sense. Please rephrase!
+  - text: Your response is incorrect. Try again!
+  utter_goodbye:
+  - text: You're welcome! Take care!
+  utter_greet:
+  - text: Good morning!
+  - text: Hello!
+  utter_sayGoOn:
+  - text: go on
+  - text: shoot
+  utter_tellCantHelp:
+  - text: Sorry, doctor does not see patient without an appointment. You have to go
+      elsewhere.
+  utter_tellDiagnosis:
+  - text: Well, it sounds like you've caught the flu.
+  utter_tellMadeAppointment:
+  - text: Ok, I have made you an appointment for {AppointmentDate}.
+  utter_tellPrescription:
+  - text: Let me prescribe some medication. Drink a lot of water and take plenty of
+      rest.
+  utter_tellReferral:
+  - text: Unfortunately, I will have to send you to a specialist. Let me do a search.
+  utter_utter_tellFoundAppointment:
+  - text: Right. I found your appointment. Please wait until called.
+  utter_utter_thanks:
+  - text: Thank you!
+  - text: Thanks!
+actions:
+- action_recommend
+- action_searchSpecialist
+- utter_acknowledge
+- utter_askAppointmentFriday
+- utter_askAppointmentTomorrow
+- utter_askChooseTime
+- utter_askHasAppointment
+- utter_askMakeAppointment
+- utter_askName
+- utter_askSymptom
+- utter_askSymptomDuration
+- utter_askWhatElse
+- utter_default
+- utter_goodbye
+- utter_greet
+- utter_sayGoOn
+- utter_tellCantHelp
+- utter_tellDiagnosis
+- utter_tellMadeAppointment
+- utter_tellPrescription
+- utter_tellReferral
+- utter_utter_tellFoundAppointment
+- utter_utter_thanks
