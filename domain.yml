@@ -48,14 +48,7 @@ responses:
   utter_askAppointmentTomorrow:
   - text: Right. Shall I book you for tomorrow?
   utter_askChooseTime:
-  - buttons:
-    - payload: ten AM
-      title: ten AM
-    - payload: two PM
-      title: two PM
-    - payload: other time
-      title: othe time
-    text: What time are you available?
+  - text: What time are you available?
   utter_askHasAppointment:
   - text: Do you have an appointment?
   utter_askMakeAppointment:
@@ -69,12 +62,7 @@ responses:
   utter_askSymptomDuration:
   - text: how long have you had {SymptomName}?
   utter_askWhatElse:
-  - buttons:
-    - payload: yes
-      title: yes
-    - payload: no
-      title: no
-    text: Do you have other symptoms other than {SymptomName}?
+  - text: Do you have other symptoms other than {SymptomName}?
   utter_default:
   - text: You don't make sense. Please rephrase!
   - text: Your response is incorrect. Try again!
