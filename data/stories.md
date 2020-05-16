@@ -156,3 +156,53 @@
     - utter_goodbye
 * intent_goodbye
     - action_default_fallback
+
+## New Story
+
+* intent_greet
+    - utter_greet
+    - utter_askSymptom
+* intent_askSeeDoctor
+    - utter_askHasAppointment
+* intent_denyHaveAppointment
+    - utter_askMakeAppointment
+* intent_agreeTo
+    - utter_askAppointmentTomorrow
+* intent_agreeTo
+    - utter_askChooseTime
+* intent_tellSymptom
+    - utter_tellMadeAppointment
+* intent_thank
+    - utter_goodbye
+
+## New Story
+
+* intent_greet
+    - utter_greet
+    - utter_askSymptom
+* intent_askSeeDoctor
+    - utter_askHasAppointment
+* intent_denyHaveAppointment
+    - utter_askMakeAppointment
+* intent_agreeTo
+    - utter_askAppointmentTomorrow
+* intent_agreeTo
+    - utter_askChooseTime
+* intent_informTime
+    - utter_tellMadeAppointment
+
+## New Story
+
+* intent_greet
+    - utter_greet
+    - utter_askSymptom
+* intent_askSeeDoctor
+    - utter_askHasAppointment
+* intent_denyHaveAppointment
+    - utter_askMakeAppointment
+* intent_agreeTo
+    - utter_askAppointmentTomorrow
+* intent_thank
+    - utter_askChooseTime
+* intent_informTime
+    - utter_tellMadeAppointment

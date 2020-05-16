@@ -33,6 +33,8 @@
 - of course
 - alright
 - well
+- yes please
+- please
 
 ## intent:intent_deny
 - no
@@ -121,6 +123,7 @@
 - I would like to see the doctor.
 - May I see the doctor?
 - I need to see the doctor right now
+- I need to see the doctor please
 
 ## intent:intent_denyHaveAppointment
 - No I don't have an appointment
@@ -138,3 +141,7 @@
 
 ## intent:intent_sayTwoPM
 - two PM
+
+## intent:intent_informTime
+- 10 am would be great
+- I am good at 10 am
