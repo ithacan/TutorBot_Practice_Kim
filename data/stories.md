@@ -206,3 +206,28 @@
     - utter_askChooseTime
 * intent_informTime
     - utter_tellMadeAppointment
+
+## New Story
+
+* intent_greet
+    - utter_greet
+    - utter_askSymptom
+* intent_tellSymptom{"SymptomName":"sore throat"}
+    - slot{"SymptomName":"sore throat"}
+    - slot{"SymptomName":"sore throat"}
+    - utter_acknowledge
+    - utter_askWhatElse
+* intent_denyHaveAppointment
+    - utter_askSymptomDuration
+* intent_tellSymptom{"SymptomDuration":"months"}
+    - slot{"SymptomDuration":"months"}
+    - slot{"SymptomDuration":"months"}
+    - utter_tellDiagnosis
+    - utter_tellPrescription
+* intent_agreeTo
+    - utter_goodbye
+    - slot{"SymptomName":"sore throat"}
+    - slot{"SymptomDuration":"months"}
+* intent_goodbye
+    - slot{"SymptomName":"sore throat"}
+    - slot{"SymptomDuration":"months"}
