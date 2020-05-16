@@ -231,3 +231,58 @@
 * intent_goodbye
     - slot{"SymptomName":"sore throat"}
     - slot{"SymptomDuration":"months"}
+
+## New Story
+
+* intent_greet
+    - utter_greet
+    - utter_askSymptom
+* intent_askSeeDoctor
+    - utter_askHasAppointment
+* intent_agreeTo
+    - utter_askName
+* intent_tellName{"PatientName":"John Doe"}
+    - slot{"PatientName":"John Doe"}
+    - utter_utter_tellFoundAppointment
+* intent_thank
+    - utter_utter_thanks
+
+## New Story
+
+* intent_greet
+    - utter_greet
+    - utter_askSymptom
+* intent_askSeeDoctor
+    - utter_askHasAppointment
+* intent_denyHaveAppointment
+    - utter_askMakeAppointment
+* intent_agreeTo
+    - utter_askAppointmentTomorrow
+* intent_askSeeDoctor
+    - utter_askAppointmentFriday
+* intent_agreeTo
+    - utter_tellMadeAppointment
+* intent_thank
+    - utter_goodbye
+
+## New Story
+
+* intent_greet
+    - utter_greet
+    - utter_askSymptom
+* intent_tellSymptom{"SymptomName":"sore throat"}
+    - slot{"SymptomName":"sore throat"}
+    - slot{"SymptomName":"sore throat"}
+    - utter_acknowledge
+    - utter_askWhatElse
+* intent_agreeTo
+* intent_tellSymptom{"SymptomName":"feet"}
+    - slot{"SymptomName":"feet"}
+    - slot{"SymptomName":"feet"}
+    - utter_askSymptomDuration
+* intent_tellSymptom{"SymptomDuration":"years"}
+    - slot{"SymptomDuration":"years"}
+    - utter_tellDiagnosis
+    - utter_tellPrescription
+* intent_thank
+    - utter_goodbye

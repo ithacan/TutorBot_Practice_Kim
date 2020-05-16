@@ -124,6 +124,7 @@
 - May I see the doctor?
 - I need to see the doctor right now
 - I need to see the doctor please
+- I need to see the doctor!
 
 ## intent:intent_denyHaveAppointment
 - No I don't have an appointment
