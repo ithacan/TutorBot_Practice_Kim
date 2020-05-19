@@ -68,6 +68,8 @@
 - wassup
 - greetings
 - Heloo
+- Hi
+- Good morning
 
 ## intent:intent_thank
 - thanks
@@ -80,6 +82,8 @@
 - cool thanks
 - cheers
 - I see. Thank you.
+- I see, thank you.
+- I see. thank you
 
 ## intent:intent_goodbye
 - bye
