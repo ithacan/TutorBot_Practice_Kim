@@ -147,3 +147,8 @@
 ## intent:intent_informTime
 - 10 am would be great
 - I am good at 10 am
+
+## intent:intent_tellRephrase
+- I don't understand
+- Sorry but I don't understand what you are saying
+- could you please rephrase?

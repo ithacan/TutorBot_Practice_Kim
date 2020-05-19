@@ -13,6 +13,8 @@ intents:
 - intent_affirm
 - intent_deny
 - intent_sayTwoPM
+- intent_informTime
+- intent_tellRephrase
 entities:
 - AppointmentDate
 - PatientName
@@ -71,6 +73,7 @@ responses:
   utter_greet:
   - text: Good morning!
   - text: Hello!
+  - text: Hi!
   utter_sayGoOn:
   - text: go on
   - text: shoot
