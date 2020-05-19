@@ -7,6 +7,9 @@
 - correct
 - thats correct
 - that's correct
+- Yes, I do
+- I think so.
+- I guess so.
 
 ## intent:intent_agreeTo
 - yes
@@ -64,6 +67,7 @@
 - howdy
 - wassup
 - greetings
+- Heloo
 
 ## intent:intent_thank
 - thanks
@@ -75,6 +79,7 @@
 - okay thank you
 - cool thanks
 - cheers
+- I see. Thank you.
 
 ## intent:intent_goodbye
 - bye
@@ -117,6 +122,7 @@
 - 2 [days](SymptomDuration)
 - high [temperature](SymptomName)
 - 2 [months](SymptomDuration)
+- I have stomach ulcer
 
 ## intent:intent_askSeeDoctor
 - Hello, may I see the doctor now?
@@ -126,6 +132,7 @@
 - I need to see the doctor right now
 - I need to see the doctor please
 - I need to see the doctor!
+- I came here to see a doctor
 
 ## intent:intent_denyHaveAppointment
 - No I don't have an appointment

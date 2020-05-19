@@ -286,3 +286,35 @@
     - utter_tellPrescription
 * intent_thank
     - utter_goodbye
+
+## New Story
+
+* intent_greet
+    - utter_greet
+    - utter_askSymptom
+* intent_askSeeDoctor
+    - utter_askHasAppointment
+* intent_denyHaveAppointment
+    - utter_askMakeAppointment
+* intent_agreeTo
+    - utter_askName
+* intent_tellName
+    - utter_askAppointmentTomorrow
+* intent_askSeeDoctor
+    - utter_askAppointmentFriday
+* intent_agreeTo
+    - utter_tellMadeAppointment
+* intent_goodbye
+
+## New Story
+
+* intent_greet
+    - utter_greet
+    - utter_askSymptom
+* intent_askSeeDoctor
+    - utter_askHasAppointment
+* intent_affirm
+    - utter_askName
+* intent_tellName
+    - utter_utter_tellFoundAppointment
+* intent_thank

@@ -51,8 +51,10 @@ responses:
   - text: Right. Shall I book you for tomorrow?
   utter_askChooseTime:
   - text: What time are you available?
+  - text: What time would be good for you?
   utter_askHasAppointment:
   - text: Do you have an appointment?
+  - text: Did you made an appointment?
   utter_askMakeAppointment:
   - text: You need to have an apointment. Would you like to make it now?
   utter_askName:
@@ -63,13 +65,16 @@ responses:
   - text: So what brought you here?
   utter_askSymptomDuration:
   - text: how long have you had {SymptomName}?
+  - text: Since when did you have this symptom?
   utter_askWhatElse:
   - text: Do you have other symptoms other than {SymptomName}?
   utter_default:
   - text: You don't make sense. Please rephrase!
   - text: Your response is incorrect. Try again!
+  - text: I didn't get it. Can you tell me again?
   utter_goodbye:
   - text: You're welcome! Take care!
+  - text: See you soon
   utter_greet:
   - text: Good morning!
   - text: Hello!
