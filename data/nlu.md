@@ -44,6 +44,7 @@
 - nope
 - nada
 - no I cannot make it tomorrow
+- no I am not available tomorrow
 
 ## intent:intent_greet
 - hi
