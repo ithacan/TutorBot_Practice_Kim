@@ -45,6 +45,7 @@ responses:
   - text: I see
   - text: right
   - text: ok
+  - text: Sure, no problem
   utter_askAppointmentFriday:
   - text: I see. How about Friday?
   utter_askAppointmentTomorrow:
@@ -52,6 +53,7 @@ responses:
   utter_askChooseTime:
   - text: What time are you available?
   - text: What time would be good for you?
+  - text: What time would you like?
   utter_askHasAppointment:
   - text: Do you have an appointment?
   - text: Did you made an appointment?
@@ -59,6 +61,8 @@ responses:
   - text: You need to have an apointment. Would you like to make it now?
   utter_askName:
   - text: Ok, may I have your full name please?
+  - text: Can I have your name, please?
+  - text: What is your name?
   utter_askSymptom:
   - text: How can I help you?
   - text: So what seems to be the problem?
@@ -85,20 +89,31 @@ responses:
   utter_tellCantHelp:
   - text: Sorry, doctor does not see patient without an appointment. You have to go
       elsewhere.
+  - text: You need to have an appointment to see a doctor.
   utter_tellDiagnosis:
   - text: Well, it sounds like you've caught the flu.
+  - text: Well, look, this is your X-ray image.
+    image: https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Lung_X-ray.jpg/220px-Lung_X-ray.jpg
   utter_tellMadeAppointment:
   - text: Ok, I have made you an appointment for {AppointmentDate}.
   utter_tellPrescription:
   - text: Let me prescribe some medication. Drink a lot of water and take plenty of
       rest.
+  - text: I will write a prescription for you.
+  - text: Take this prescription to the phamarcy.
   utter_tellReferral:
   - text: Unfortunately, I will have to send you to a specialist. Let me do a search.
+  - text: I suggest you go to a see a doctor at a general hospital.
   utter_utter_tellFoundAppointment:
   - text: Right. I found your appointment. Please wait until called.
+  - text: Okay. Your name is on the list. Can you wait here?
   utter_utter_thanks:
   - text: Thank you!
   - text: Thanks!
+  - text: Thanks a lot
+  - text: Cheers, mate!
+  utter_askSyptom:
+  - text: Where does it hurt?
 actions:
 - action_recommend
 - action_searchSpecialist
@@ -123,3 +138,4 @@ actions:
 - utter_tellReferral
 - utter_utter_tellFoundAppointment
 - utter_utter_thanks
+- utter_askSyptom
