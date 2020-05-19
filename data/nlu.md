@@ -159,3 +159,6 @@
 - I don't understand
 - Sorry but I don't understand what you are saying
 - could you please rephrase?
+
+## intent:intent_tellDiagnosis
+- Can you show me where I hurt?

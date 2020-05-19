@@ -15,6 +15,7 @@ intents:
 - intent_sayTwoPM
 - intent_informTime
 - intent_tellRephrase
+- intent_tellDiagnosis
 entities:
 - AppointmentDate
 - PatientName
@@ -67,6 +68,7 @@ responses:
   - text: How can I help you?
   - text: So what seems to be the problem?
   - text: So what brought you here?
+  - text: Where does it hurt?
   utter_askSymptomDuration:
   - text: how long have you had {SymptomName}?
   - text: Since when did you have this symptom?
@@ -79,10 +81,12 @@ responses:
   utter_goodbye:
   - text: You're welcome! Take care!
   - text: See you soon
+  - text: See you {name}!
   utter_greet:
   - text: Good morning!
   - text: Hello!
   - text: Hi!
+  - text: '"Hey, {name}. How are you?"'
   utter_sayGoOn:
   - text: go on
   - text: shoot
@@ -112,8 +116,6 @@ responses:
   - text: Thanks!
   - text: Thanks a lot
   - text: Cheers, mate!
-  utter_askSyptom:
-  - text: Where does it hurt?
 actions:
 - action_recommend
 - action_searchSpecialist
@@ -138,4 +140,3 @@ actions:
 - utter_tellReferral
 - utter_utter_tellFoundAppointment
 - utter_utter_thanks
-- utter_askSyptom
